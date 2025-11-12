@@ -36,6 +36,7 @@ calculator.addEventListener('click', (event) => {
     } else {
       num2 = num2 + clickedNumber;
       display.innerText = num2;
+      display.innerText = num1 + ' ' + operator + ' ' + num2;
     }
   }
 
@@ -43,18 +44,22 @@ calculator.addEventListener('click', (event) => {
   if (event.target.innerText === '*') {
     // Do something with this operator
     operator = '*';
+    display.innerText = num1 + ' ' + operator;
   }
   
   if (event.target.innerText === '+') {
     operator = '+';
+    display.innerText = num1 + ' ' + operator;
   }
   
   if (event.target.innerText === '-') {
     operator = '-';
+    display.innerText = num1 + ' ' + operator;
   }
   
   if (event.target.innerText === '/') {
     operator = '/';
+    display.innerText = num1 + ' ' + operator;
   }
   
   if (event.target.innerText === 'C') {
